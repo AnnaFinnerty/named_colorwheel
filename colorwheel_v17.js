@@ -686,6 +686,19 @@ window.addEventListener("DOMContentLoaded", function (event) {
                 //console.log("qSphere @675");
                 aboutMessage.style.display = "flex";
                 aboutMessage.style.flexDirection = "column";
+            
+                //LOAD GIF
+                //<img src="colorwheel.gif" id="gif" style="display:block" width="632" height="353">
+                var newNode = document.createElement("img");
+                newNode.id = "gif";
+                newNode.src = "colorwheel.gif";
+                newNode.style.display = "block";
+                newNode.style.width = "632px";
+                newNode.style.height = "353px";
+                var parentDiv = document.getElementById("aboutText2").parentNode;
+                var chile = document.getElementById("aboutText2");
+                parentDiv.insertBefore(newNode, chile);
+            
                 var gif = document.getElementById("gif");
                 gif.style.maxWidth = "100%";
                 gif.style.height = "auto";
