@@ -1,26 +1,10 @@
 window.addEventListener("DOMContentLoaded", function (event) {
-
-    //                      WORKLIST
-    // * finish intro/rewrite instructions
-    // * video
-    // * add color change to palette buttons and copy buttons
-    // * add media query for palette pop on smaller sizes
-    // + blue copy icon is wonky
-    // + pallette fuckery (see beige - navajoWhite)
-    // + pallette can close w/out copy button closing
-    // + alert that colors have been copied to the clipboard
-    // + add rgb to color info in window
-    // + status clear when click outside of r[0] of colorwheel
-    // + close copy window after alert pop-up
-    // + remove pallette selection by click on background
     
     window.addEventListener("load", setCanvas)  ;
     window.onmousemove = hoverOn;    
     window.addEventListener("resize", setCanvas);
     window.addEventListener("resize", updateSize);
-    
-   
-    
+     
     // declare page elements
     var selected = false;
     var rotating = false;
