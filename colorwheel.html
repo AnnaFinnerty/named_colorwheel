@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Named Color Wheel</title>
+    <meta name="description" content="A tool to inspire lazy web designers">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <!-- Pacifico, Happy Monkey, Permanent Marker -->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <style>
+        body {
+            background: rgb(45, 47, 51);
+            overflow: hidden;
+            cursor: se-resize;
+            font-family: 'Permanent Marker', cursive;
+            font-weight: 900;
+            font-size: 22px;
+            margin: 0;
+        }
+        
+        a {
+            color: dodgerblue;
+        }
+        #canvas1 {
+            /*cursor: crosshair;*/
+        }
+    </style>
+    <!--<script src="https://www.w3schools.com/lib/w3color.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="./w3color.js"></script>
+    <script src="./colorwheel_v17.js"></script>
+</head>
+
+<body>
+    <canvas id="canvas1"></canvas>
+    <div id="status"></div>
+    <div id="about">
+        <div id="aboutclose">X</div> 
+        <text id="aboutText1">Too lazy to type RGB? This color wheel shows the named colors supported by all modern web browsers.</text>
+        <!--
+        <br><text>&#043; Click any color to cycle complements. 
+        <br>&#043; Add colors to the palettes on the side to change background colors. Use # to  copy to clipboard.</text>
+        <br><text>&#043; If you need inspiration, click the round slider on the bottom left to rearrange the colors. Click the center of the wheel to start rotation!</text>
+        -->
+        <img src="colorwheel.gif" id="gif" style="display:block" width="632" height="353">
+        <br><text style="text-align:center" id="aboutText2">Designed by <a id="home_link" href="http://www.mountainoakdesign.com">Mountain Oak Design Co.</a></text>
+               
+    </div>
+    <div class="intro">
+        <div id="arrow1">
+            <text>&#060;&#172;</text>
+        </div>
+        <div id="arrow2">
+            <text>&#067;&#062;</text>
+        </div>
+        <div id="circle">
+            <text>&#111;</text>
+        </div>
+        <div id="plus">
+            <text>&#043;</text>
+        </div>
+        
+    </div>
+
+   
+    <div id="textarea">
+        
+        
+        
+    </div>
+   
+   <!--
+    <div id = "leftpalette">
+        <div id="leftclose"></div>
+    </div>
+    <div id = "rightpalette">
+        <div id="rightclose"></div>
+    </div>
+    <div id = "animatebutton"></div>
+    <div id = "infobutton"></div>
+    -->
+</body>
+</html>
